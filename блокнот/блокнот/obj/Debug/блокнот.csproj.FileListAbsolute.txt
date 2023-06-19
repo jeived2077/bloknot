@@ -1,0 +1,12 @@
+D:\ОАП C++\блокнот\блокнот\bin\Debug\блокнот.exe.config
+D:\ОАП C++\блокнот\блокнот\bin\Debug\блокнот.exe
+D:\ОАП C++\блокнот\блокнот\bin\Debug\блокнот.pdb
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.csproj.AssemblyReference.cache
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.csproj.SuggestedBindingRedirects.cache
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.Form1.resources
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.Form2.resources
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.Properties.Resources.resources
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.csproj.GenerateResource.cache
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.csproj.CoreCompileInputs.cache
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.exe
+D:\ОАП C++\блокнот\блокнот\obj\Debug\блокнот.pdb

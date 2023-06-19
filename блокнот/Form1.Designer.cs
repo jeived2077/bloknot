@@ -38,6 +38,7 @@
             this.вставитьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.помощьToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.стеретьВсёToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,7 +59,8 @@
             this.файлToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.открытьToolStripMenuItem,
             this.сахранитьToolStripMenuItem,
-            this.выйтиToolStripMenuItem});
+            this.выйтиToolStripMenuItem,
+            this.стеретьВсёToolStripMenuItem});
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
@@ -123,6 +125,13 @@
             this.richTextBox1.TabIndex = 1;
             this.richTextBox1.Text = "";
             // 
+            // стеретьВсёToolStripMenuItem
+            // 
+            this.стеретьВсёToolStripMenuItem.Name = "стеретьВсёToolStripMenuItem";
+            this.стеретьВсёToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.стеретьВсёToolStripMenuItem.Text = "Стереть всё";
+            this.стеретьВсёToolStripMenuItem.Click += new System.EventHandler(this.стеретьВсёToolStripMenuItem_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -155,6 +164,7 @@
         private System.Windows.Forms.ToolStripMenuItem помощьToolStripMenuItem;
         private System.Windows.Forms.RichTextBox richTextBox1;
         private System.Windows.Forms.ToolStripMenuItem выйтиToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem стеретьВсёToolStripMenuItem;
     }
 }
 
