@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -24,8 +25,8 @@ namespace блокнот
             open.Filter = "Text Document (*.txt) | *.txt| All Files (*.*)|*.*";
             if (open.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                richTextBox1.LoadFile(open.FileName, RichTextBoxStreamType.PlainText);
-                this.Text = open.FileName;
+                richTextBox1.Text = File.ReadAllText(open.FileName);
+                open.FileName = richTextBox1.Text;
             }
         }
 
@@ -36,8 +37,8 @@ namespace блокнот
             save.OverwritePrompt = true;
             if (save.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                richTextBox1.SaveFile(save.FileName, RichTextBoxStreamType.PlainText);
-                this.Text = save.FileName;
+                richTextBox1.Text = File.ReadAllText(save.FileName);
+                save.FileName = richTextBox1.Text;
             }
         }
 
@@ -80,15 +81,12 @@ namespace блокнот
 
         private void Form1_FormClosed(object sender, FormClosedEventArgs e)
         {
-            switch (DialogResult = MessageBox.Show("Вы уверены, что хотите выйти из программы?", "Закрыть программу", MessageBoxButtons.YesNo))
-            {
-                case DialogResult.Yes:
-                    Application.Exit();
+            
+        }
 
-                    break;
-                case DialogResult.No: break;
-
-            }
+        private void стеретьВсёToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            richTextBox1.Clear();
         }
     }
         
